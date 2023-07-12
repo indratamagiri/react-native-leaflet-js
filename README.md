@@ -1,33 +1,27 @@
-# react-native-leaflet
+# @charlespalmerbf/react-native-leaflet-js
 
 A LeafletView component using WebView and Leaflet map for React Native applications
 
-Notes: This project is replacement for https://github.com/reggie3/react-native-webview-leaflet, which no longer maintain by author and work only with expo.
-
-[![npm](https://img.shields.io/npm/v/react-native-leaflet-view.svg)](https://www.npmjs.com/package/react-native-leaflet-view)
-[![npm](https://img.shields.io/npm/dm/react-native-leaflet-view.svg)](https://www.npmjs.com/package/react-native-leaflet-view)
-[![npm](https://img.shields.io/npm/dt/react-native-leaflet-view.svg)](https://www.npmjs.com/package/react-native-leaflet-view)
-
-<img src="images/android.png" height="600">       <img src="images/ios.png" height="600">
+Notes: This project is forked from https://github.com/pavel-corsaghin/react-native-leaflet, who no longer maintains his fork.
 
 ## Installation
 
 Install using npm or yarn like this:
 
 ```sh
-npm install --save react-native-leaflet-view
+npm install --save @charlespalmerbf/react-native-leaflet-js
 ```
 
 or
 
 ```sh
-yarn add react-native-leaflet-view
+yarn add @charlespalmerbf/react-native-leaflet-js
 ```
 
 ## Usage
 
 ```js
-import { LatLng, LeafletView } from 'react-native-leaflet-view';
+import { LatLng, LeafletView } from '@charlespalmerbf/react-native-leaflet-js';
 
 <LeafletView
     // The rest of your props, see the list below
@@ -51,11 +45,3 @@ import { LatLng, LeafletView } from 'react-native-leaflet-view';
 | ownPositionMarker   | optional | Marker                          | A special marker that has an ID of OWN_POSTION_MARKER_ID                                                                                                                                                        |  |
 | zoom                | optional | number                          | Desired zoom value of the map                                                                                                                                                                                   |
 | doDebug             | optional | boolean                         | A flag for debug message logging                                                                                                                                                                               |
-
-## Contributing
-
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
-
-## License
-
-MIT
