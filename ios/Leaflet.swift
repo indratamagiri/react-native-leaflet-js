@@ -5,4 +5,9 @@ class Leaflet: NSObject {
     func multiply(a: Float, b: Float, resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock) -> Void {
         resolve(a*b)
     }
+
+   @objc
+    static func requiresMainQueueSetup() -> Bool {
+        return true // or false; see docs
+    }
 }
